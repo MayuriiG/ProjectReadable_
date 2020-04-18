@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zeO-HW-Mke">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_theFlag_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdd-Qy-qqB">
+                                <rect key="frame" x="0.0" y="198" width="414" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91184592234005746" green="0.95777156684825249" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHP-hk-DDH" userLabel="View2">
+                                <rect key="frame" x="0.0" y="355" width="414" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92358380559999997" green="0.81066710050000002" blue="0.84603652939999996" alpha="0.26535675965665234" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sm-mw-2yr" userLabel="View3">
+                                <rect key="frame" x="0.0" y="519" width="414" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79053256608325395" green="0.98039215690000003" blue="0.86319552050030546" alpha="0.38916644313304721" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="nVV-tG-IJK">
+                                <rect key="frame" x="127" y="221" width="160" height="420"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6A-a8-09m">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="oah-q2-giG"/>
+                                            <constraint firstAttribute="width" constant="160" id="zps-Ry-PV9"/>
+                                        </constraints>
+                                        <state key="normal" image="USA">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JNR-7z-3Ip"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gZ-ZY-XJ3">
+                                        <rect key="frame" x="0.0" y="160" width="160" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5d9-cp-5qI"/>
+                                            <constraint firstAttribute="width" constant="160" id="D2U-iT-hwq"/>
+                                        </constraints>
+                                        <state key="normal" image="USA">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhU-sP-8mY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaL-Td-LRl">
+                                        <rect key="frame" x="0.0" y="320" width="160" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="qRe-ih-jEF"/>
+                                            <constraint firstAttribute="height" constant="100" id="qWO-NI-0LY"/>
+                                        </constraints>
+                                        <state key="normal" image="USA">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPk-db-Hxz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the Flag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTc-r7-kdM">
+                                <rect key="frame" x="105" y="136" width="204" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204" id="3oB-Sb-kV4"/>
+                                    <constraint firstAttribute="height" constant="70" id="xwB-7I-Jbj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WallCountry" translatesAutoresizingMaskIntoConstraints="NO" id="xRM-lk-XQd">
+                                <rect key="frame" x="0.0" y="681" width="414" height="215"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xRM-lk-XQd" firstAttribute="top" secondItem="nVV-tG-IJK" secondAttribute="bottom" constant="40" id="8dp-W0-XVM"/>
+                            <constraint firstAttribute="bottom" secondItem="xRM-lk-XQd" secondAttribute="bottom" id="FbU-Ip-MU8"/>
+                            <constraint firstItem="vTc-r7-kdM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="Qg1-Yz-CUd"/>
+                            <constraint firstItem="nVV-tG-IJK" firstAttribute="centerX" secondItem="vTc-r7-kdM" secondAttribute="centerX" id="cAI-hF-YO5"/>
+                            <constraint firstItem="xRM-lk-XQd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kKH-02-UkO"/>
+                            <constraint firstItem="nVV-tG-IJK" firstAttribute="top" secondItem="vTc-r7-kdM" secondAttribute="bottom" constant="15" id="rNH-0m-gn1"/>
+                            <constraint firstItem="xRM-lk-XQd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vjA-id-b3k"/>
+                            <constraint firstItem="vTc-r7-kdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="xG5-Ib-qLf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="grQ-Lq-XbM"/>
+                    <connections>
+                        <outlet property="btn1" destination="o6A-a8-09m" id="eea-Ec-eRs"/>
+                        <outlet property="btn2" destination="0gZ-ZY-XJ3" id="zuA-It-U5a"/>
+                        <outlet property="btn3" destination="xaL-Td-LRl" id="84n-bD-E82"/>
+                        <outlet property="viewContent" destination="Mdd-Qy-qqB" id="8V3-ju-cMJ"/>
+                    </connections>
+                </viewController>
+                <view contentMode="scaleToFill" id="eb4-2N-nhq">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <viewLayoutGuide key="safeArea" id="bPA-Nz-PR5"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OT4-97-8dh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zeO-HW-Mke" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xg0-a3-TXk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.87105029820000002" green="0.76880830529999999" blue="0.69867843389999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qjO-eG-PAV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4k-gP-jl4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="USA" width="1000" height="527"/>
+        <image name="WallCountry" width="620" height="465"/>
+    </resources>
+    <color key="tintColor" red="0.91184592229999994" green="0.95777156679999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
